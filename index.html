@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopSphere</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <h1 class="logo">Shop<span>Sphere</span></h1>
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button id="cartBtn">🛒 Cart (<span id="cartCount">0</span>)</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Discover Products You'll Love</h2>
+    <p>Simple, affordable and quality products for everyone.</p>
+  </section>
+
+  <!-- Category Filters -->
+  <section class="categories">
+    <button class="filter-btn active" data-category="All">All</button>
+    <button class="filter-btn" data-category="Electronics">Electronics</button>
+    <button class="filter-btn" data-category="Fashion">Fashion</button>
+    <button class="filter-btn" data-category="Home">Home</button>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="productContainer">
+    <!-- Product cards are added here by JavaScript -->
+  </section>
+
+  <!-- Cart Sidebar -->
+  <div id="cartOverlay"></div>
+  <aside id="cartSidebar">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCartBtn">✕</button>
+    </div>
+    <div id="cartItems">
+      <!-- Cart items are added here by JavaScript -->
+    </div>
+    <div class="cart-total">
+      <p>Total: ₹<span id="cartTotal">0</span></p>
+      <button id="clearCartBtn">Clear Cart</button>
+    </div>
+  </aside>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 ShopSphere. Built as a demo project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
